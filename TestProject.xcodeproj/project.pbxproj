@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C9F845C2209DC73009DE69D /* TaskDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F845B2209DC73009DE69D /* TaskDB.swift */; };
 		0CB0E588220766E300078489 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */; };
 		0CB0E58A220779AA00078489 /* TaskJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E589220779AA00078489 /* TaskJob.swift */; };
 		0CB0E58C2207801600078489 /* JobCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E58B2207801600078489 /* JobCellTableViewCell.swift */; };
+		0CB0E58E22097F7B00078489 /* PopUpCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E58D22097F7B00078489 /* PopUpCalendarViewController.swift */; };
 		0CD413AE21FB88B100F9BFF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD413AD21FB88B100F9BFF7 /* AppDelegate.swift */; };
-		0CD413B021FB88B100F9BFF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD413AF21FB88B100F9BFF7 /* ViewController.swift */; };
+		0CD413B021FB88B100F9BFF7 /* DailyReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD413AF21FB88B100F9BFF7 /* DailyReportController.swift */; };
 		0CD413B321FB88B100F9BFF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD413B121FB88B100F9BFF7 /* Main.storyboard */; };
 		0CD413B521FB88B200F9BFF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD413B421FB88B200F9BFF7 /* Assets.xcassets */; };
 		0CD413B821FB88B200F9BFF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD413B621FB88B200F9BFF7 /* LaunchScreen.storyboard */; };
@@ -19,17 +21,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = TestProject/Models/ForgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
+		0C9F845B2209DC73009DE69D /* TaskDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDB.swift; sourceTree = "<group>"; };
+		0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = TestProject/Controller/ForgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		0CB0E589220779AA00078489 /* TaskJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskJob.swift; sourceTree = "<group>"; };
 		0CB0E58B2207801600078489 /* JobCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellTableViewCell.swift; sourceTree = "<group>"; };
+		0CB0E58D22097F7B00078489 /* PopUpCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpCalendarViewController.swift; sourceTree = "<group>"; };
 		0CD413AA21FB88B100F9BFF7 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD413AD21FB88B100F9BFF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0CD413AF21FB88B100F9BFF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CD413AF21FB88B100F9BFF7 /* DailyReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportController.swift; sourceTree = "<group>"; };
 		0CD413B221FB88B100F9BFF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CD413B421FB88B200F9BFF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CD413B721FB88B200F9BFF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CD413B921FB88B200F9BFF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CD413C22200AE4000F9BFF7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = TestProject/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		0CD413C22200AE4000F9BFF7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = TestProject/Controller/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C9F845A2209DC58009DE69D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C9F845B2209DC73009DE69D /* TaskDB.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		0CD413A121FB88B100F9BFF7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +74,12 @@
 		0CD413AC21FB88B100F9BFF7 /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				0C9F845A2209DC58009DE69D /* Services */,
 				0CD413C12200ADDB00F9BFF7 /* Views */,
 				0CD413C02200ADB600F9BFF7 /* Controller */,
 				0CD413BF2200ADAE00F9BFF7 /* Models */,
 				0CD413AD21FB88B100F9BFF7 /* AppDelegate.swift */,
-				0CD413B121FB88B100F9BFF7 /* Main.storyboard */,
 				0CD413B421FB88B200F9BFF7 /* Assets.xcassets */,
-				0CD413B621FB88B200F9BFF7 /* LaunchScreen.storyboard */,
 				0CD413B921FB88B200F9BFF7 /* Info.plist */,
 			);
 			path = TestProject;
@@ -85,6 +96,11 @@
 		0CD413C02200ADB600F9BFF7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0CD413AF21FB88B100F9BFF7 /* DailyReportController.swift */,
+				0CD413C22200AE4000F9BFF7 /* LoginViewController.swift */,
+				0CB0E58B2207801600078489 /* JobCellTableViewCell.swift */,
+				0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */,
+				0CB0E58D22097F7B00078489 /* PopUpCalendarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -92,10 +108,8 @@
 		0CD413C12200ADDB00F9BFF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0CD413AF21FB88B100F9BFF7 /* ViewController.swift */,
-				0CD413C22200AE4000F9BFF7 /* LoginViewController.swift */,
-				0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */,
-				0CB0E58B2207801600078489 /* JobCellTableViewCell.swift */,
+				0CD413B621FB88B200F9BFF7 /* LaunchScreen.storyboard */,
+				0CD413B121FB88B100F9BFF7 /* Main.storyboard */,
 			);
 			name = Views;
 			path = "New Group";
@@ -172,11 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9F845C2209DC73009DE69D /* TaskDB.swift in Sources */,
 				0CB0E588220766E300078489 /* ForgotPasswordViewController.swift in Sources */,
 				0CB0E58A220779AA00078489 /* TaskJob.swift in Sources */,
 				0CD413C32200AE4000F9BFF7 /* LoginViewController.swift in Sources */,
 				0CB0E58C2207801600078489 /* JobCellTableViewCell.swift in Sources */,
-				0CD413B021FB88B100F9BFF7 /* ViewController.swift in Sources */,
+				0CB0E58E22097F7B00078489 /* PopUpCalendarViewController.swift in Sources */,
+				0CD413B021FB88B100F9BFF7 /* DailyReportController.swift in Sources */,
 				0CD413AE21FB88B100F9BFF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

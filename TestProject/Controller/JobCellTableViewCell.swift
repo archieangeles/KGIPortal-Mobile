@@ -30,8 +30,22 @@ class JobCellTableViewCell: UITableViewCell {
     func fillLabels(taskDetail: TaskJob)
     {
         lblJobLabel.text = taskDetail.name
-        lblJobTiming.text = taskDetail.expectedTimingFrom
+        lblJobTiming.text = "Timing: \(taskDetail.expectedTimingFrom)" 
         jobId = taskDetail.jobID
+        
+        if taskDetail.status == .Failed
+        {
+            btnImageIcon.image = UIImage(named: "failedicon")
+        }
+        else if taskDetail.status == .Success
+        {
+            btnImageIcon.image = UIImage(named: "successicon")
+        }
+        else
+        {
+            btnImageIcon.image = UIImage(named: "notseticon")
+        }
+        
     }
 
 }

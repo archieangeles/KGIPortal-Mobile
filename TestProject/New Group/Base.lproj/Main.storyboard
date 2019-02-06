@@ -46,7 +46,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.72279161209999998" green="0.002190365689" blue="0.30981212850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.60784313725490191" green="0.13725490196078433" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="8el-26-cN0" firstAttribute="leading" secondItem="Kjm-LE-U5h" secondAttribute="leading" constant="16" id="1Bi-Bw-2Kp"/>
                                     <constraint firstItem="8el-26-cN0" firstAttribute="bottom" secondItem="995-cr-pys" secondAttribute="bottom" id="H68-hZ-hc0"/>
@@ -306,7 +306,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaQ-WN-kIs" userLabel="Today">
                                         <rect key="frame" x="118.5" y="0.0" width="110" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <state key="normal" title="Today">
                                             <color key="titleColor" red="1" green="0.98778439998251544" blue="0.98375299952488249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -355,7 +355,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.038415727791424811" green="0.084029842178794598" blue="0.48645701142131981" alpha="0.69437607020547942" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.41360766267123289" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pM3-p1-gDm" firstAttribute="leading" secondItem="fEW-Qz-E8D" secondAttribute="leading" constant="14" id="1Yi-ig-pVJ"/>
                             <constraint firstItem="8s7-1r-1yv" firstAttribute="leading" secondItem="fEW-Qz-E8D" secondAttribute="leading" constant="14" id="E0V-fn-N6h"/>

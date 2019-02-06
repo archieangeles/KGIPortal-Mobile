@@ -75,6 +75,50 @@ extension DailyReportController : UITableViewDataSource, UITableViewDelegate
         return cell
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let actions = UIContextualAction(style: .normal, title: "Actions") { (action, view, handler) in
+            print("Actions was tapped")
+            
+            let alertController = UIAlertController(title: "Task Actions", message: "This action may effect on the job performance", preferredStyle: .actionSheet)
+            
+            alertController.addAction(UIAlertAction(title: "Create Email Alert", style: .default, handler: { (_) in
+                print("Create Email Alert was pressed")
+            }))
+            
+            alertController.addAction(UIAlertAction(title: "Mark For Later Review", style: .default, handler: { (_) in
+                print("Later review was pressed")
+            }))
+            
+            alertController.addAction(UIAlertAction(title: "Alert The Support Team", style: .default, handler: { (_) in
+                print("Cancel alert was pressed")
+            }))
+            
+            alertController.addAction(UIAlertAction(title: "Re-Run The Job", style: .destructive, handler: { (_) in
+                print("Re-run action was pressed")
+            }))
+            
+            alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
+                print("Cancel button was pressed")
+            }))
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        
+        
+        actions.backgroundColor = #colorLiteral(red: 0.6078431373, green: 0.137254902, blue: 0.2745098039, alpha: 1)
+        
+//        let deleteAction = UIContextualAction(style: .normal, title: "Action") { (action, view, (Bool) -> Void) in
+//            print("Delete action was tapped")
+//        }
+        
+        let swipeConfig = UISwipeActionsConfiguration(actions: [actions])
+        
+        swipeConfig.performsFirstActionWithFullSwipe = false
+        return swipeConfig
+    }
+    
     
 }
 

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TestProject.xcodeproj">
+      location = "self:/Users/pachie/Desktop/TestProject/TestProject/KGIPortalMobile.xcodeproj">
    </FileRef>
 </Workspace>

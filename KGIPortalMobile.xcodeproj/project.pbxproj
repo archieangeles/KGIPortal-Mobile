@@ -22,11 +22,12 @@
 
 /* Begin PBXFileReference section */
 		0C9F845B2209DC73009DE69D /* TaskDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDB.swift; sourceTree = "<group>"; };
+		0C9F845D220AB973009DE69D /* KGIPortalMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KGIPortalMobile.entitlements; sourceTree = "<group>"; };
 		0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = TestProject/Controller/ForgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		0CB0E589220779AA00078489 /* TaskJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskJob.swift; sourceTree = "<group>"; };
 		0CB0E58B2207801600078489 /* JobCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellTableViewCell.swift; sourceTree = "<group>"; };
 		0CB0E58D22097F7B00078489 /* PopUpCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpCalendarViewController.swift; sourceTree = "<group>"; };
-		0CD413AA21FB88B100F9BFF7 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CD413AA21FB88B100F9BFF7 /* KGIPortalMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGIPortalMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD413AD21FB88B100F9BFF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CD413AF21FB88B100F9BFF7 /* DailyReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportController.swift; sourceTree = "<group>"; };
 		0CD413B221FB88B100F9BFF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		0CD413A121FB88B100F9BFF7 = {
 			isa = PBXGroup;
 			children = (
+				0C9F845D220AB973009DE69D /* KGIPortalMobile.entitlements */,
 				0CD413AC21FB88B100F9BFF7 /* TestProject */,
 				0CD413AB21FB88B100F9BFF7 /* Products */,
 			);
@@ -66,7 +68,7 @@
 		0CD413AB21FB88B100F9BFF7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CD413AA21FB88B100F9BFF7 /* TestProject.app */,
+				0CD413AA21FB88B100F9BFF7 /* KGIPortalMobile.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +120,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0CD413A921FB88B100F9BFF7 /* TestProject */ = {
+		0CD413A921FB88B100F9BFF7 /* KGIPortalMobile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CD413BC21FB88B200F9BFF7 /* Build configuration list for PBXNativeTarget "TestProject" */;
+			buildConfigurationList = 0CD413BC21FB88B200F9BFF7 /* Build configuration list for PBXNativeTarget "KGIPortalMobile" */;
 			buildPhases = (
 				0CD413A621FB88B100F9BFF7 /* Sources */,
 				0CD413A721FB88B100F9BFF7 /* Frameworks */,
@@ -130,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = TestProject;
+			name = KGIPortalMobile;
 			productName = TestProject;
-			productReference = 0CD413AA21FB88B100F9BFF7 /* TestProject.app */;
+			productReference = 0CD413AA21FB88B100F9BFF7 /* KGIPortalMobile.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,10 +149,18 @@
 				TargetAttributes = {
 					0CD413A921FB88B100F9BFF7 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = 0CD413A521FB88B100F9BFF7 /* Build configuration list for PBXProject "TestProject" */;
+			buildConfigurationList = 0CD413A521FB88B100F9BFF7 /* Build configuration list for PBXProject "KGIPortalMobile" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -163,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0CD413A921FB88B100F9BFF7 /* TestProject */,
+				0CD413A921FB88B100F9BFF7 /* KGIPortalMobile */,
 			);
 		};
 /* End PBXProject section */
@@ -339,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KGIPortalMobile.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3F22UC8DK;
 				INFOPLIST_FILE = TestProject/Info.plist;
@@ -346,7 +357,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "BupBays-Tech.TestProject";
+				PRODUCT_BUNDLE_IDENTIFIER = PangAppYopy.KGIPORTAL.MOBILE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -357,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KGIPortalMobile.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3F22UC8DK;
 				INFOPLIST_FILE = TestProject/Info.plist;
@@ -364,7 +376,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "BupBays-Tech.TestProject";
+				PRODUCT_BUNDLE_IDENTIFIER = PangAppYopy.KGIPORTAL.MOBILE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -374,7 +386,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CD413A521FB88B100F9BFF7 /* Build configuration list for PBXProject "TestProject" */ = {
+		0CD413A521FB88B100F9BFF7 /* Build configuration list for PBXProject "KGIPortalMobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CD413BA21FB88B200F9BFF7 /* Debug */,
@@ -383,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CD413BC21FB88B200F9BFF7 /* Build configuration list for PBXNativeTarget "TestProject" */ = {
+		0CD413BC21FB88B200F9BFF7 /* Build configuration list for PBXNativeTarget "KGIPortalMobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CD413BD21FB88B200F9BFF7 /* Debug */,

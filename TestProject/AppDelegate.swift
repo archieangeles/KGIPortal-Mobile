@@ -7,16 +7,69 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+      //  UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+       //     print("granted: \(granted)")
+        //}
+        
+        self.setupPushNitification(application: application)
+        
         return true
+    }
+    
+    func setupPushNitification(application: UIApplication) -> () {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge])
+        {(granted, error) in
+            
+            if granted
+            {
+                DispatchQueue.main.async {
+                    application.registerForRemoteNotifications()
+                }
+            }
+            else
+            {
+                print("User notification permission denied: \(String(describing: error?.localizedDescription))")
+            }
+            
+        }
+    }
+    
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("Successfull registration. token is:")
+        print(tokenString(deviceToken))
+    }
+    
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("Did fail to register for remote notification: \(error.localizedDescription)")
+    }
+    
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        print("Remote notification received with user info: \(userInfo)")
+    }
+    
+    func tokenString(_ deviceToken: Data) -> String
+    {
+        let bytes = [UInt8](deviceToken)
+        var token = ""
+        for byte in bytes {
+            token += String(format: "%02x", byte)
+        }
+        
+        return token
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

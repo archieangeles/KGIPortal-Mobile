@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020296EA220CAF8800C05966 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020296E9220CAF8800C05966 /* MusicPlayerViewController.swift */; };
 		0C9F845C2209DC73009DE69D /* TaskDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F845B2209DC73009DE69D /* TaskDB.swift */; };
 		0CB0E588220766E300078489 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */; };
 		0CB0E58A220779AA00078489 /* TaskJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E589220779AA00078489 /* TaskJob.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		020296E9220CAF8800C05966 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		0C9F845B2209DC73009DE69D /* TaskDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDB.swift; sourceTree = "<group>"; };
 		0C9F845D220AB973009DE69D /* KGIPortalMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KGIPortalMobile.entitlements; sourceTree = "<group>"; };
 		0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = TestProject/Controller/ForgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -103,6 +105,7 @@
 				0CB0E58B2207801600078489 /* JobCellTableViewCell.swift */,
 				0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */,
 				0CB0E58D22097F7B00078489 /* PopUpCalendarViewController.swift */,
+				020296E9220CAF8800C05966 /* MusicPlayerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				0CB0E58C2207801600078489 /* JobCellTableViewCell.swift in Sources */,
 				0CB0E58E22097F7B00078489 /* PopUpCalendarViewController.swift in Sources */,
 				0CD413B021FB88B100F9BFF7 /* DailyReportController.swift in Sources */,
+				020296EA220CAF8800C05966 /* MusicPlayerViewController.swift in Sources */,
 				0CD413AE21FB88B100F9BFF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

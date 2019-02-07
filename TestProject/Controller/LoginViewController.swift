@@ -16,10 +16,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
-    
-    
+    @objc func pushNotificationHandler(_ notification : NSNotification) {
+        // self.udateUI() // Add code to show a specific view on tap.
+        
+        performSegue(withIdentifier: "dailyreport", sender: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(pushNotificationHandler(_:)) , name: NSNotification.Name(rawValue: "NewNotification"), object: nil)
         
         var preferredStatusBarStyle: UIStatusBarStyle {
             return .lightContent

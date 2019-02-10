@@ -20,10 +20,19 @@ class DailyReportController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.navigationItem.title = "DAILY JOB STATUS"
+        
         loadTables(date: selectDate)
         
         
         
+    }
+    
+    @IBAction func onMenuTapped()
+    {
+        print("Print toggle side menu")
+        
+        NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
     }
 
     @IBAction func calendarIconClick(_ sender: Any) {

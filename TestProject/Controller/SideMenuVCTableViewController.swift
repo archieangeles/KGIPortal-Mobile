@@ -10,6 +10,15 @@ import UIKit
 
 class SideMenuVCTableViewController: UITableViewController {
 
+    
+    @IBAction func onMenuTapped()
+    {
+        print("Print toggle side menu")
+        
+        NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

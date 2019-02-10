@@ -23,6 +23,7 @@ struct TaskJob {
     var isFridayEnabled: Bool
     var isSaturdayEnabled: Bool
     var isSundayEnabled: Bool
+    var isReRunable: Bool
 }
 
 enum TaskJobStatus: String

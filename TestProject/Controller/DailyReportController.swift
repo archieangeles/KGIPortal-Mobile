@@ -94,9 +94,14 @@ extension DailyReportController : UITableViewDataSource, UITableViewDelegate
                 print("Cancel alert was pressed")
             }))
             
-            alertController.addAction(UIAlertAction(title: "Re-Run The Job", style: .destructive, handler: { (_) in
-                print("Re-run action was pressed")
-            }))
+            if self.dailyJobList[indexPath.row].isReRunable
+            {
+                alertController.addAction(UIAlertAction(title: "Re-Run The Job", style: .destructive, handler: { (_) in
+                    print("Re-run action was pressed")
+                }))
+            }
+            
+            
             
             alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
                 print("Cancel button was pressed")

@@ -77,7 +77,7 @@ extension DailyReportController : UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let actions = UIContextualAction(style: .normal, title: "Actions") { (action, view, handler) in
+        let actions = UIContextualAction(style: .normal, title: "ACTIONS") { (action, view, handler) in
             print("Actions was tapped")
             
             let alertController = UIAlertController(title: "Task Actions", message: "This action may effect on the job performance", preferredStyle: .actionSheet)
@@ -112,7 +112,7 @@ extension DailyReportController : UITableViewDataSource, UITableViewDelegate
         
         
         
-        actions.backgroundColor = #colorLiteral(red: 0.6078431373, green: 0.137254902, blue: 0.2745098039, alpha: 1)
+        actions.backgroundColor = #colorLiteral(red: 0.2901960784, green: 0.07843137255, blue: 0.5490196078, alpha: 1)
         
 //        let deleteAction = UIContextualAction(style: .normal, title: "Action") { (action, view, (Bool) -> Void) in
 //            print("Delete action was tapped")

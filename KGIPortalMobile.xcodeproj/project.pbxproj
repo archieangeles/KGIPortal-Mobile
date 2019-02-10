@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		020296EA220CAF8800C05966 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020296E9220CAF8800C05966 /* MusicPlayerViewController.swift */; };
+		0C66B2B42210660200B1147A /* SideMenuVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C66B2B32210660200B1147A /* SideMenuVCTableViewController.swift */; };
+		0C66B2B622106B9800B1147A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C66B2B522106B9800B1147A /* HomeViewController.swift */; };
+		0C66B2B822106CF000B1147A /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C66B2B722106CF000B1147A /* ContainerViewController.swift */; };
 		0C9F845C2209DC73009DE69D /* TaskDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F845B2209DC73009DE69D /* TaskDB.swift */; };
 		0CB0E588220766E300078489 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */; };
 		0CB0E58A220779AA00078489 /* TaskJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E589220779AA00078489 /* TaskJob.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		020296E9220CAF8800C05966 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		0C66B2B32210660200B1147A /* SideMenuVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVCTableViewController.swift; sourceTree = "<group>"; };
+		0C66B2B522106B9800B1147A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0C66B2B722106CF000B1147A /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		0C9F845B2209DC73009DE69D /* TaskDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDB.swift; sourceTree = "<group>"; };
 		0C9F845D220AB973009DE69D /* KGIPortalMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KGIPortalMobile.entitlements; sourceTree = "<group>"; };
 		0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = TestProject/Controller/ForgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -106,6 +112,9 @@
 				0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */,
 				0CB0E58D22097F7B00078489 /* PopUpCalendarViewController.swift */,
 				020296E9220CAF8800C05966 /* MusicPlayerViewController.swift */,
+				0C66B2B32210660200B1147A /* SideMenuVCTableViewController.swift */,
+				0C66B2B522106B9800B1147A /* HomeViewController.swift */,
+				0C66B2B722106CF000B1147A /* ContainerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,8 +214,11 @@
 				0CD413C32200AE4000F9BFF7 /* LoginViewController.swift in Sources */,
 				0CB0E58C2207801600078489 /* JobCellTableViewCell.swift in Sources */,
 				0CB0E58E22097F7B00078489 /* PopUpCalendarViewController.swift in Sources */,
+				0C66B2B42210660200B1147A /* SideMenuVCTableViewController.swift in Sources */,
+				0C66B2B622106B9800B1147A /* HomeViewController.swift in Sources */,
 				0CD413B021FB88B100F9BFF7 /* DailyReportController.swift in Sources */,
 				020296EA220CAF8800C05966 /* MusicPlayerViewController.swift in Sources */,
+				0C66B2B822106CF000B1147A /* ContainerViewController.swift in Sources */,
 				0CD413AE21FB88B100F9BFF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

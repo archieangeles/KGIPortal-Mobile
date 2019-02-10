@@ -60,7 +60,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dLh-yq-iAb">
-                                <rect key="frame" x="0.0" y="120" width="375" height="503"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="jobcell" rowHeight="60" id="szf-Gs-Kbs" customClass="JobCellTableViewCell" customModule="KGIPortalMobile" customModuleProvider="target">
@@ -395,7 +395,7 @@
                                             <constraint firstAttribute="height" constant="36" id="zNf-5w-eWn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="23"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.98637455701828003" green="0.89318925142288208" blue="0.92555844783782959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CENTRALIZED TOOLS AND REPORTING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fm-oA-S4W">
@@ -404,7 +404,7 @@
                                             <constraint firstAttribute="height" constant="12" id="3ie-wC-tpv"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.98637455701828003" green="0.89318925142288208" blue="0.92555844783782959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNs-fQ-1f7">
@@ -413,29 +413,29 @@
                                             <constraint firstAttribute="height" constant="32" id="bun-4y-zPv"/>
                                             <constraint firstAttribute="width" constant="32" id="wli-J5-lsc"/>
                                         </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.98637455701828003" green="0.89318925142288208" blue="0.92555844783782959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="menu" backgroundImage="menu"/>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrO-y1-Rck">
-                                        <rect key="frame" x="20" y="86.5" width="335" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrO-y1-Rck">
+                                        <rect key="frame" x="20" y="86.5" width="335" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="A6b-YE-l0T"/>
+                                            <constraint firstAttribute="height" constant="60" id="A6b-YE-l0T"/>
                                         </constraints>
-                                        <color key="textColor" red="0.72279161209999998" green="0.002190365689" blue="0.30981212850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <color key="textColor" red="0.42825150489807129" green="0.043402470648288727" blue="0.24697446823120117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-83-IoN">
-                                        <rect key="frame" x="20" y="146.5" width="335" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-83-IoN">
+                                        <rect key="frame" x="20" y="166.5" width="335" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Fn5-ZB-6BD"/>
+                                            <constraint firstAttribute="height" constant="60" id="Fn5-ZB-6BD"/>
                                         </constraints>
-                                        <color key="textColor" red="0.72279161209999998" green="0.002190365689" blue="0.30981212850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <color key="textColor" red="0.42825150489807129" green="0.043402470648288727" blue="0.24697446823120117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.72279161214828491" green="0.0021903656888753176" blue="0.30981212854385376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.38431372549019605" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="DfZ-yy-BhO" secondAttribute="trailing" constant="10" id="0di-HM-NWj"/>
                                     <constraint firstItem="9fm-oA-S4W" firstAttribute="top" secondItem="xAu-3q-ap2" secondAttribute="top" constant="42.5" id="320-xx-7Wc"/>
@@ -455,50 +455,55 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRy-Wx-92L">
-                                <rect key="frame" x="20" y="260" width="335" height="50"/>
-                                <color key="backgroundColor" red="0.72279161214828491" green="0.0021903656888753176" blue="0.30981212854385376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="290" width="335" height="60"/>
+                                <color key="backgroundColor" red="0.76135522127151489" green="0.094358570873737335" blue="0.3571755588054657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ByN-dr-fyb"/>
+                                    <constraint firstAttribute="height" constant="60" id="SN3-ho-ysG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="LOGIN">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.98855561017990112" green="0.89416342973709106" blue="0.92535978555679321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="dailyreport" id="gmj-OC-z32"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsR-UB-FUc">
-                                <rect key="frame" x="20" y="330" width="335" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WZN-cK-sQG">
+                                <rect key="frame" x="16" y="619" width="343" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsR-UB-FUc">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
+                                        <color key="backgroundColor" red="0.94255989789962769" green="0.38463330268859863" blue="0.57246315479278564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Forgot My Password?">
+                                            <color key="titleColor" red="0.98855561017990112" green="0.89416342973709106" blue="0.92535978555679321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Vq0-Si-wLV" kind="presentation" id="j83-IW-W9A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="f6Z-Ow-FcK"/>
+                                    <constraint firstAttribute="height" constant="32" id="iFl-BN-46t"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="FORGOT MY PASSWORD">
-                                    <color key="titleColor" red="0.72279161214828491" green="0.0021903656888753176" blue="0.30981212854385376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Vq0-Si-wLV" kind="presentation" id="j83-IW-W9A"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.38431372549019605" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.48729270696640015" green="0.16037032008171082" blue="0.44683021306991577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SsR-UB-FUc" firstAttribute="leading" secondItem="NAt-Yv-L97" secondAttribute="leading" constant="20" id="9JX-pV-cHE"/>
+                            <constraint firstItem="NAt-Yv-L97" firstAttribute="bottom" secondItem="WZN-cK-sQG" secondAttribute="bottom" constant="16" id="9Hc-Pu-8XU"/>
                             <constraint firstItem="NAt-Yv-L97" firstAttribute="trailing" secondItem="GRy-Wx-92L" secondAttribute="trailing" constant="20" id="BUk-IV-3nL"/>
                             <constraint firstItem="xAu-3q-ap2" firstAttribute="trailing" secondItem="NAt-Yv-L97" secondAttribute="trailing" id="CJN-Mx-GUl"/>
-                            <constraint firstItem="GRy-Wx-92L" firstAttribute="top" secondItem="xAu-3q-ap2" secondAttribute="bottom" constant="30" id="Kin-tT-frJ"/>
-                            <constraint firstItem="SsR-UB-FUc" firstAttribute="top" secondItem="GRy-Wx-92L" secondAttribute="bottom" constant="20" id="ZZf-WI-iBe"/>
+                            <constraint firstItem="GRy-Wx-92L" firstAttribute="top" secondItem="xAu-3q-ap2" secondAttribute="bottom" constant="60" id="Kin-tT-frJ"/>
+                            <constraint firstItem="NAt-Yv-L97" firstAttribute="trailing" secondItem="WZN-cK-sQG" secondAttribute="trailing" constant="16" id="Ugy-QE-wtT"/>
+                            <constraint firstItem="WZN-cK-sQG" firstAttribute="leading" secondItem="NAt-Yv-L97" secondAttribute="leading" constant="16" id="Y5G-lZ-JYx"/>
                             <constraint firstItem="xAu-3q-ap2" firstAttribute="leading" secondItem="NAt-Yv-L97" secondAttribute="leading" id="hZl-RR-lEm"/>
                             <constraint firstItem="xAu-3q-ap2" firstAttribute="top" secondItem="NAt-Yv-L97" secondAttribute="top" id="lo8-6t-rk7"/>
-                            <constraint firstItem="NAt-Yv-L97" firstAttribute="trailing" secondItem="SsR-UB-FUc" secondAttribute="trailing" constant="20" id="mUN-oU-Szj"/>
                             <constraint firstItem="GRy-Wx-92L" firstAttribute="leading" secondItem="NAt-Yv-L97" secondAttribute="leading" constant="20" id="vHq-gc-zmg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NAt-Yv-L97"/>
                     </view>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btnForgotPassword" destination="SsR-UB-FUc" id="x9J-eC-olN"/>
                         <outlet property="btnLogin" destination="GRy-Wx-92L" id="1Sd-KN-MdN"/>

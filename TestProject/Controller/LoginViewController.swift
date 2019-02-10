@@ -36,12 +36,9 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         btnLogin.layer.cornerRadius = 5
         btnLogin.layer.borderWidth = 1
-        btnLogin.layer.borderColor = #colorLiteral(red: 0.5791940689, green: 0.1280144453, blue: 0.5726861358, alpha: 1)
+        btnLogin.layer.borderColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
         
         
-        btnForgotPassword.layer.cornerRadius = 5
-        btnForgotPassword.layer.borderWidth = 1
-        btnForgotPassword.layer.borderColor = #colorLiteral(red: 0.7227916121, green: 0.002190365689, blue: 0.3098121285, alpha: 1)
         
         txtUserName.layer.cornerRadius = 5
         txtUserName.layer.borderWidth = 1

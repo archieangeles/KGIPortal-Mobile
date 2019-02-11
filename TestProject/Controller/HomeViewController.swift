@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(showDailyJobStatus), name: NSNotification.Name("ShowDailyJobStatus"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showMyProfile), name: NSNotification.Name("ShowProfile"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showSettings), name: NSNotification.Name("ShowSettings"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(logoutMe), name: NSNotification.Name("LogoutMe"), object: nil)
     }
     
     @IBAction func onMenuTapped()
@@ -36,6 +37,27 @@ class HomeViewController: UIViewController {
     
     @objc func showSettings() -> Void {
         performSegue(withIdentifier: "ShowSettings", sender: nil)
+    }
+    
+    @objc func logoutMe()
+    {
+        let logoutAlert = UIAlertController(title: "Logout", message: "Are you sure you wan to logout?", preferredStyle: .alert)
+        
+        let yesAction = UIAlertAction(title: "Yes", style: .default, handler: { (action) in
+            print("You click yes button")
+        })
+        
+        let noAction = UIAlertAction(title: "No", style: .cancel) { (action) in
+            print("You click no button")
+        }
+        
+        
+        logoutAlert.addAction(yesAction)
+        logoutAlert.addAction(noAction)
+        
+        self.present(logoutAlert,animated: true)
+        
+        
     }
 
 

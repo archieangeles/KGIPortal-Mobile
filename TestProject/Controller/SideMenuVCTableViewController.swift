@@ -41,6 +41,8 @@ class SideMenuVCTableViewController: UITableViewController {
             NotificationCenter.default.post(name: NSNotification.Name("ShowProfile"), object: nil)
         case 2:
             NotificationCenter.default.post(name: NSNotification.Name("ShowSettings"), object: nil)
+        case 3:
+            NotificationCenter.default.post(name: NSNotification.Name("LogoutMe"), object: nil)
         default:
             break
         }

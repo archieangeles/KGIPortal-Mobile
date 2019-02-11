@@ -39,3 +39,43 @@ func getMyCompanyInfo(loginId: String, mycompanyInfo: @escaping ([ProfileFields]
     
     mycompanyInfo(prof)
 }
+
+
+func getMyRoles(loginId: String, systemRoles: @escaping ([SystemRoles]) -> Void )
+{
+    var roles: [SystemRoles] = []
+    
+    roles.append(SystemRoles.init(loginId: "abc12345", roleId: "ROLE01", roleName: "Compliance"))
+    roles.append(SystemRoles.init(loginId: "abc12345", roleId: "ROLE02", roleName: "System Admin"))
+    roles.append(SystemRoles.init(loginId: "abc12345", roleId: "ROLE03", roleName: "Traders"))
+    roles.append(SystemRoles.init(loginId: "abc12345", roleId: "ROLE02", roleName: "Dealing Admin"))
+    
+    
+    
+    systemRoles(roles)
+}
+
+
+func getMyLoginHistory(loginId: String, loginHistory: @escaping ([LoginHistory]) -> Void)
+{
+ 
+    var loginHis: [LoginHistory] = []
+    
+    loginHis.append(LoginHistory.init(loginDateTime: Date(), platForm: "WEB: Google Chrome", ipAddress: "192.168.8.100"))
+    
+    loginHis.append(LoginHistory.init(loginDateTime: Date(), platForm: "Mobile Apps", ipAddress: "192.168.8.100"))
+    
+    loginHis.append(LoginHistory.init(loginDateTime: Date(), platForm: "WEB: Google Chrome", ipAddress: "192.168.8.100"))
+    
+    
+    loginHis.append(LoginHistory.init(loginDateTime: Date(), platForm: "WEB: Google Chrome", ipAddress: "192.168.8.100"))
+    
+    
+    loginHis.append(LoginHistory.init(loginDateTime: Date(), platForm: "WEB: Google Chrome", ipAddress: "192.168.8.100"))
+    
+    
+    loginHis.append(LoginHistory.init(loginDateTime: Date(), platForm: "WEB: Google Chrome", ipAddress: "192.168.8.100"))
+    
+    loginHistory(loginHis)
+
+}

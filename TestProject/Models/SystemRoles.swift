@@ -9,6 +9,7 @@
 import Foundation
 
 struct SystemRoles {
-    var roleId: String?
-    var roleName: String?
+    let loginId: String?
+    let roleId: String?
+    let roleName: String?
 }

@@ -24,7 +24,7 @@ class MyProfileViewController: UIViewController {
             self.profiles = profile
             
             self.profilePicture.layer.cornerRadius = self.profilePicture.frame.width / 2
-            self.profilePicture.layer.borderWidth = 1
+            self.profilePicture.layer.borderWidth = 5
             self.profilePicture.layer.masksToBounds = true
             self.profilePicture.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             self.profilePicture.clipsToBounds = true
@@ -113,6 +113,26 @@ extension MyProfileViewController: UITableViewDelegate, UITableViewDataSource
         
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.section == 2 {
+            
+            let data = otherInfo[indexPath.row]
+            
+            //print(print("Selected row \(indexPath.row)"))
+            
+            if data.fieldValue == "roles"
+            {
+                performSegue(withIdentifier: "ShowRoles", sender: nil)
+            }
+            else
+            {
+                performSegue(withIdentifier: "ShowLoginHistory", sender: nil)
+            }
+        }
+        
     }
     
     

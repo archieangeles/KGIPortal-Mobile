@@ -9,7 +9,7 @@
 import Foundation
 
 struct LoginHistory {
-    var loginDateTime: Date?
-    var platForm: String?
-    var ipAddress: String?
+    let loginDateTime: Date?
+    let platForm: String?
+    let ipAddress: String?
 }

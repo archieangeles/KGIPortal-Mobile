@@ -19,6 +19,7 @@
 		0C66B2C422113B3B00B1147A /* ShowRolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C66B2C322113B3B00B1147A /* ShowRolesViewController.swift */; };
 		0C66B2C62211437A00B1147A /* LoginHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C66B2C52211437A00B1147A /* LoginHistoryViewController.swift */; };
 		0C9F845C2209DC73009DE69D /* TaskDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F845B2209DC73009DE69D /* TaskDB.swift */; };
+		0C9F845F22132FA0009DE69D /* KeyGenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F845E22132FA0009DE69D /* KeyGenViewController.swift */; };
 		0CB0E588220766E300078489 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */; };
 		0CB0E58A220779AA00078489 /* TaskJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E589220779AA00078489 /* TaskJob.swift */; };
 		0CB0E58C2207801600078489 /* JobCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0E58B2207801600078489 /* JobCellTableViewCell.swift */; };
@@ -45,6 +46,7 @@
 		0C66B2C52211437A00B1147A /* LoginHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHistoryViewController.swift; sourceTree = "<group>"; };
 		0C9F845B2209DC73009DE69D /* TaskDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDB.swift; sourceTree = "<group>"; };
 		0C9F845D220AB973009DE69D /* KGIPortalMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KGIPortalMobile.entitlements; sourceTree = "<group>"; };
+		0C9F845E22132FA0009DE69D /* KeyGenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyGenViewController.swift; sourceTree = "<group>"; };
 		0CB0E587220766E300078489 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = TestProject/Controller/ForgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		0CB0E589220779AA00078489 /* TaskJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskJob.swift; sourceTree = "<group>"; };
 		0CB0E58B2207801600078489 /* JobCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				0C66B2C122109CC000B1147A /* MyProfileViewController.swift */,
 				0C66B2C322113B3B00B1147A /* ShowRolesViewController.swift */,
 				0C66B2C52211437A00B1147A /* LoginHistoryViewController.swift */,
+				0C9F845E22132FA0009DE69D /* KeyGenViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				0C9F845C2209DC73009DE69D /* TaskDB.swift in Sources */,
 				0CB0E588220766E300078489 /* ForgotPasswordViewController.swift in Sources */,
 				0CB0E58A220779AA00078489 /* TaskJob.swift in Sources */,
+				0C9F845F22132FA0009DE69D /* KeyGenViewController.swift in Sources */,
 				0CD413C32200AE4000F9BFF7 /* LoginViewController.swift in Sources */,
 				0C66B2BC22109A1B00B1147A /* LoginHistory.swift in Sources */,
 				0CB0E58C2207801600078489 /* JobCellTableViewCell.swift in Sources */,

@@ -17,6 +17,8 @@ class HomeViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(showMyProfile), name: NSNotification.Name("ShowProfile"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showSettings), name: NSNotification.Name("ShowSettings"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(logoutMe), name: NSNotification.Name("LogoutMe"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showKeyGen), name: NSNotification.Name("KeyGenNotification"), object: nil)
     }
     
     @IBAction func onMenuTapped()
@@ -58,6 +60,11 @@ class HomeViewController: UIViewController {
         self.present(logoutAlert,animated: true)
         
         
+    }
+    
+    @objc func showKeyGen()
+    {
+        performSegue(withIdentifier: "ShowKeyGen", sender: nil)
     }
 
 

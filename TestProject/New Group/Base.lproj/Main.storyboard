@@ -892,6 +892,7 @@
                         <segue destination="ra2-qr-xjW" kind="show" identifier="ShowProfile" id="Jte-xb-Sbk"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDailyJobStatus" id="ko5-DY-ctQ"/>
                         <segue destination="izD-Da-NG7" kind="show" identifier="ShowSettings" id="6zj-FJ-EWm"/>
+                        <segue destination="0Ld-Kc-jCA" kind="show" identifier="ShowKeyGen" id="WoF-Ty-V7S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0XG-5A-fit" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -928,6 +929,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmb-hq-Byj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1368.1159420289855" y="23.64130434782609"/>
+        </scene>
+        <!--Key Gen View Controller-->
+        <scene sceneID="2nC-fh-ZKv">
+            <objects>
+                <viewController id="0Ld-Kc-jCA" customClass="KeyGenViewController" customModule="KGIPortalMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EOx-d1-vDJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="652"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY GEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wd-cZ-9wB">
+                                <rect key="frame" x="15" y="50" width="384" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vqy-uU-viH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1wd-cZ-9wB" firstAttribute="top" secondItem="dbv-8T-aSX" secondAttribute="top" constant="50" id="Xgx-eV-usr"/>
+                            <constraint firstItem="1wd-cZ-9wB" firstAttribute="leading" secondItem="dbv-8T-aSX" secondAttribute="leading" constant="15" id="ebn-bN-0GF"/>
+                            <constraint firstItem="dbv-8T-aSX" firstAttribute="trailing" secondItem="1wd-cZ-9wB" secondAttribute="trailing" constant="15" id="m9y-WQ-BXC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dbv-8T-aSX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkc-k5-T30" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1368.1159420289855" y="947.28260869565224"/>
         </scene>
     </scenes>
     <resources>

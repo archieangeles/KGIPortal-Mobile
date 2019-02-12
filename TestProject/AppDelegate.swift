@@ -63,6 +63,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         UIApplication.shared.applicationIconBadgeNumber = 0
         
+        
+       
+        
+       
+        if let aps = userInfo["aps"] as? NSDictionary
+        {
+            
+            
+            if let alert = aps["alert"] as? NSDictionary
+            {
+                if (alert["message"] as? NSString) != nil
+                {
+                    //Do stuff
+                    
+                    print(alert)
+                }
+            } else if (aps["alert"] as? NSString) != nil {
+                //Do stuff
+                
+               // print(aps["alert"] as? NSDictionary)
+            }
+            
+            if let notifyType = aps["notificationtype"] as? NSString
+            {
+                //print(x)
+                
+                if notifyType == "TYPE1"
+                {
+                    if let notiId = aps["notificationid"] as? NSString
+                    {
+                        print("Notification ID \(notiId)")
+                        
+                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "KeyGenNotification"), object: nil, userInfo: userInfo)
+                    }
+                    else
+                    {
+                        print("noti id is null")
+                    }
+                    
+                }
+                
+                
+            }
+            else{
+                
+            }
+        }
+        
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "NewNotification"), object: nil, userInfo: userInfo)
     }
     

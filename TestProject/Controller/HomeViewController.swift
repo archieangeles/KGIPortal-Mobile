@@ -41,9 +41,9 @@ class HomeViewController: UIViewController {
     
     @objc func logoutMe()
     {
-        let logoutAlert = UIAlertController(title: "Logout", message: "Are you sure you wan to logout?", preferredStyle: .alert)
+        let logoutAlert = UIAlertController(title: "Logout Confirmation", message: "This will logout your current session. Are you sure you want to continue?", preferredStyle: .alert)
         
-        let yesAction = UIAlertAction(title: "Yes", style: .default, handler: { (action) in
+        let yesAction = UIAlertAction(title: "Yes", style: .destructive, handler: { (action) in
             print("You click yes button")
         })
         

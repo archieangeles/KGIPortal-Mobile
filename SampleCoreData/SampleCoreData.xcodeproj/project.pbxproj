@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C624DAA224162EB0008BA3B /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C624DA9224162EB0008BA3B /* PersonListViewController.swift */; };
 		0C6DA239223E8AD00069772F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DA238223E8AD00069772F /* AppDelegate.swift */; };
 		0C6DA23B223E8AD00069772F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DA23A223E8AD00069772F /* ViewController.swift */; };
 		0C6DA23E223E8AD00069772F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6DA23C223E8AD00069772F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C624DA9224162EB0008BA3B /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		0C6DA235223E8AD00069772F /* SampleCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6DA238223E8AD00069772F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C6DA23A223E8AD00069772F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,9 +39,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C624DA8224162960008BA3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C624DA9224162EB0008BA3B /* PersonListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		0C6DA22C223E8AD00069772F = {
 			isa = PBXGroup;
 			children = (
+				0C624DA8224162960008BA3B /* Controller */,
 				0C6DA237223E8AD00069772F /* SampleCoreData */,
 				0C6DA236223E8AD00069772F /* Products */,
 			);
@@ -141,6 +152,7 @@
 				0C6DA241223E8AD00069772F /* SampleCoreData.xcdatamodeld in Sources */,
 				0C6DA23B223E8AD00069772F /* ViewController.swift in Sources */,
 				0C6DA239223E8AD00069772F /* AppDelegate.swift in Sources */,
+				0C624DAA224162EB0008BA3B /* PersonListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,23 +8,43 @@
 
 import UIKit
 
-class PersonListViewController: UIViewController {
 
+
+
+class PersonListViewController: UIViewController, AddPersonProtocol  {
+    
+    
+    
+    
+    func operationResult(isSuccess: Bool) {
+    
+        print("Deleage New record has been saved \(isSuccess)")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnNewPersonClick(_ sender: Any) {
+        
+        performSegue(withIdentifier: "segaddperson", sender: self)
+        
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segaddperson"
+        {
+            let vc: ViewController  = segue.destination as! ViewController
+            
+            vc.del = self
+        }
+    }
+    
+    
+    
+    
 
 }
